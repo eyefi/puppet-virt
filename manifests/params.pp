@@ -15,6 +15,7 @@ class virt::params {
     /^physical|^kvm/: {
       $servicename = $operatingsystem ? {
         'Debian' => 'libvirt-bin',
+        'Ubuntu' => 'libvirt-bin',
         default  => 'libvirtd',
       }
       $packages = $operatingsystem ? {
