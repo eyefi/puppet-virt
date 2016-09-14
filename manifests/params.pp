@@ -20,7 +20,7 @@ class virt::params {
       }
       $packages = $operatingsystem ? {
         'Debian' => [ 'kvm', 'libvirt0', 'libvirt-bin', 'qemu', 'virtinst', 'libvirt-ruby' ],
-        'Ubuntu' => [ 'ubuntu-virt-server', 'python-vm-builder', 'kvm', 'qemu', 'qemu-kvm', 'virtinst', 'ruby-libvirt' ],
+        'Ubuntu' => [ 'ubuntu-virt-server', 'python-vm-builder', 'qemu', 'qemu-kvm', 'virtinst', 'ruby-libvirt' ],
         'Fedora' => [ 'kvm', 'qemu', 'libvirt', 'python-virtinst', 'ruby-libvirt' ],
         'CentOS' => [ 'qemu-kvm', 'libvirt', 'python-virtinst', 'ruby-libvirt' ],
       }
